@@ -1,0 +1,179 @@
+/* css da página inicial */
+body {
+	overflow-x: hidden;
+	font-family: 'PT Serif', serif;
+}
+
+header {
+	background: #FFD1F3;
+	padding: 0 0 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+header h1 {
+	text-align: center;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 500px 5px;
+}
+
+nav ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #D17A7A;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #9A3A5E;
+	text-decoration: underline;
+}
+
+.menu a {
+	display: flex;
+	gap: 1rem;
+}
+
+.homedoce {
+	width: 100%;
+}
+
+main {
+}
+
+.principal {
+	padding: 3em 0;
+	background: #FEFEFEFE;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;
+	color: #D17A7A;
+	margin: 1em;
+	clear: left;
+}
+
+.diferenciais {
+	width: 640px;
+	margin: 0 auto;
+}
+
+.conteúdo-diferenciais {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.itens	{
+	line-height: 2;
+}
+
+.itens:before {
+	content:"★";
+}
+
+.imagem-diferenciais {
+	display: block;
+	width: 60%;
+	height: 60%;
+	padding: 10px;
+	opacity: 0.9;
+	transition: 400ms;
+}
+
+.imagem-diferenciais:hover {
+	opacity: 0.7;
+}
+
+/* css da página produtos */
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: auto;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+.produtos li:hover {
+	border-color: #C78C19;
+}
+
+.produtos li:active {
+	border-color: #088C19;	
+}
+
+.produtos li:hover h2 {
+	font-size: 34px;
+}
+
+.produtos h2 {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+/* Próxima etapa:  css da página encomendas */
+
+footer {
+	text-align: center;
+	background: #FFD1F3;
+	padding: 10px 60px;
+}
+
+.copyright {
+	color: #D17A7A;
+	font-size: 13px;
+	margin: 20px 0;
+}
+
+@media screen and (max-width: 480px){
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+		width: auto;
+	}
+	h1 {
+		text-align: center;
+	}
+
+	nav	{
+		position: static;
+	}
+
+	.lista-beneficios, .imagem-beneficios {
+		width: 100%;
+	}
+}

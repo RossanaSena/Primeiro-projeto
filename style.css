@@ -1,4 +1,4 @@
-/* css da página inicial */
+/* css página inicial */
 body {
 	overflow-x: hidden;
 	font-family: 'PT Serif', serif;
@@ -15,16 +15,19 @@ header {
 
 header h1 {
 	text-align: center;
+	margin: 0 0 50px;
 }
 
 .caixa {
 	position: relative;
-	width: 940px;
+	width: 100%;
 	margin: 0 500px 5px;
 }
 
 nav ul {
 	display: flex;
+	flex-direction:row;
+	gap: 1rem;
 	justify-content: center;
 	align-items: center;
 }
@@ -49,9 +52,8 @@ nav a:hover {
 
 .homedoce {
 	width: 100%;
-}
-
-main {
+	height: 50vh;
+	object-fit: cover;
 }
 
 .principal {
@@ -69,12 +71,27 @@ main {
 	clear: left;
 }
 
-.diferenciais {
-	width: 640px;
-	margin: 0 auto;
+.frase-principal {
+	text-align:center;
+	margin: auto;
 }
 
-.conteúdo-diferenciais {
+.titulo-diferencias {
+	line-height: 2;
+	margin: 0 0 0 20px;
+}
+
+.diferenciais {
+	margin: 0 0 0 300px;
+	line-height: 2;
+}
+
+.conteudo-diferenciais {
+	line-height: 2;
+	margin: 0 6%;
+}
+
+.lista-diferenciais {
 	width: 40%;
 	display: inline-block;
 	vertical-align: top;
@@ -89,31 +106,35 @@ main {
 }
 
 .imagem-diferenciais {
-	display: block;
-	width: 60%;
-	height: 60%;
-	padding: 10px;
+	width: 35%;
+	margin: 0 0 10% 0 ;
 	opacity: 0.9;
 	transition: 400ms;
+	box-shadow: 3px 3px 3px 0 #000000;
 }
 
 .imagem-diferenciais:hover {
 	opacity: 0.7;
 }
 
-/* css da página produtos */
+/* css página produtos */
 .produtos {
 	width: 940px;
 	margin: 0 auto;
 	padding: 50px 0;
 }
 
+/*produtos - ajustar tamanho das imagens!!*/
+.imagem-produtos {
+	
+}
+
 .produtos li {
 	display: inline-block;
 	text-align: center;
-	width: 30%;
+	width: 25%;
 	vertical-align: top;
-	margin: 0 1.5%;
+	margin: 1.5%;
 	padding: auto;
 	box-sizing: border-box;
 	border: 2px solid #000000;
@@ -121,15 +142,16 @@ main {
 }
 
 .produtos li:hover {
-	border-color: #C78C19;
+	border-color: #c5187760;
 }
 
+/*produtos - quando clicar direcionar para a página de encomendas. qual propriedade é mais assertiva?*/
 .produtos li:active {
 	border-color: #088C19;	
 }
 
 .produtos li:hover h2 {
-	font-size: 34px;
+	font-size: 25px;
 }
 
 .produtos h2 {
@@ -147,9 +169,78 @@ main {
 	margin-top: 10px;
 }
 
-/* Próxima etapa:  css da página encomendas */
+/*css página encomendas*/
+
+form {
+	margin: 40px;
+}
+
+form label, form legend {
+	display:block;
+	font-size: 15px;
+	margin: 0 0 10px;
+}
+
+.periodoatendimento {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+	color: #000000;
+}
+
+.checkbox {
+	cursor: pointer;
+	margin: 20px 0;
+}
+
+.enviar {
+	width:40%;
+	padding: 15px 0;
+	background: rgba(247, 0, 255, 0.466);
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: rgba(255, 0, 212, 0.87);
+	transform: scale(1.02);
+}
+
+.horarioatendimento {
+	font-size: 18px;
+	margin: 40px;
+}
+
+table {
+	margin: 40px;
+	text-align: center;
+}
+
+thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
+}
+
+td, th {
+	border: 1px solid #000000;
+	padding: 8px 15px;
+	font-size: 15px;
+}
 
 footer {
+	display: inherit;
 	text-align: center;
 	background: #FFD1F3;
 	padding: 10px 60px;

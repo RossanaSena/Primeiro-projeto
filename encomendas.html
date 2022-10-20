@@ -6,22 +6,26 @@
 
 		<link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
 	</head>
+	
 	<body>
-		<header>
-			<div class="caixa">
+		<body>
+			<header>
 				<h1><img src="logocabecalho.png"></h1>
-
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="produtos.html">Produtos</a></li>
-						<li><a href="encomendas.html">Encomendas</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-
+				<div class="caixa">
+					<nav>
+						<ul>
+							<li class="menu"><a href="index.html">Home</a></li>
+							<li class="menu"><a href="produtos.html">Produtos</a></li>
+							<li class="menu"><a href="encomendas.html">Encomendas</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			
 		<main>
 			<form>
 				<label for="nomesobrenome">Nome e sobrenome</label>
@@ -33,8 +37,8 @@
 				<label for="telefone">Telefone</label>
 				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
 
-				<label for="mensagem">Mensagem</label>
-				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+				<label for="mensagem">Descrição da encomenda</label>
+				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required placeholder="Descreva aqui os sabores, a quantidade de cada um e a data para entrega"></textarea>
 
 				<fieldset>
 					<legend>Como prefere o nosso contato?</legend>
@@ -46,19 +50,22 @@
 				</fieldset>
 
 				<fieldset>
-					<legend>Qual horário prefere ser atendido?</legend>
-					<select>
+					<legend>Qual período prefere ser atendido?</legend>
+					<select class="periodoatendimento">
 						<option>Manhã</option>
 						<option>Tarde</option>
 						<option>Noite</option>
 					</select>
 				</fieldset>
 
-				<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+				<label class="checkbox">
+					<input type="checkbox" checked>Gostaria de receber nossas promoções por email?
+				</label>
 
-				<input type="submit" value="Enviar formulário" class="enviar">
+				<input type="submit" value="Enviar pedido da encomenda" class="enviar">
 			</form>
 
+			<legend class="horarioatendimento">Horário de atendimento</legend>	
 			<table>
 				<tr>
 					<td>Dia</td>
@@ -66,15 +73,27 @@
 				</tr>
 				<tr>
 					<td>Segunda</td>
-					<td>8h ~ 20h</td>
+					<td>8h às 17h</td>
+				</tr>
+				<tr>
+					<td>Terça</td>
+					<td>8h às 17h</td>
 				</tr>
 				<tr>
 					<td>Quarta</td>
-					<td>8h ~ 20h</td>
+					<td>8h às 17h</td>
+				</tr>
+				<tr>
+					<td>Quinta</td>
+					<td>8h às 17h</td>
 				</tr>
 				<tr>
 					<td>Sexta</td>
-					<td>8h ~ 20h</td>
+					<td>8h às 17h</td>
+				</tr>
+				<tr>
+					<td>Sábado</td>
+					<td>9h às 13h</td>
 				</tr>
 			</table>
 		</main>

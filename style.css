@@ -126,7 +126,8 @@ nav a:hover {
 
 /*produtos - ajustar tamanho das imagens!!*/
 .imagem-produtos {
-	
+	width: 70%;
+	height: auto;
 }
 
 .produtos li {

@@ -3,18 +3,16 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Encomendas - BrigadeiRô</title>
-
-		<link rel="stylesheet" href="reset.css">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
 	</head>
-	
 	<body>
 		<body>
 			<header>
-				<h1><img src="logocabecalho.png"></h1>
+				<h1><img src="./img/logocabecalho.png"></h1>
 				<div class="caixa">
 					<nav>
 						<ul>
@@ -25,30 +23,22 @@
 					</nav>
 				</div>
 			</header>
-			
 		<main>
 			<form>
 				<label for="nomesobrenome">Nome e sobrenome</label>
 				<input type="text" id="nomesobrenome" class="input-padrao" required>
-
 				<label for="email">Email</label>
 				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
-
 				<label for="telefone">Telefone</label>
 				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
-
 				<label for="mensagem">Descrição da encomenda</label>
 				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required placeholder="Descreva aqui os sabores, a quantidade de cada um e a data para entrega"></textarea>
-
 				<fieldset>
 					<legend>Como prefere o nosso contato?</legend>
 					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
-					
-					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
-					
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>					
 					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
 				</fieldset>
-
 				<fieldset>
 					<legend>Qual período prefere ser atendido?</legend>
 					<select class="periodoatendimento">
@@ -57,14 +47,11 @@
 						<option>Noite</option>
 					</select>
 				</fieldset>
-
 				<label class="checkbox">
 					<input type="checkbox" checked>Gostaria de receber nossas promoções por email?
 				</label>
-
 				<input type="submit" value="Enviar pedido da encomenda" class="enviar">
 			</form>
-
 			<legend class="horarioatendimento">Horário de atendimento</legend>	
 			<table>
 				<tr>
@@ -97,7 +84,6 @@
 				</tr>
 			</table>
 		</main>
-
 		<footer>
 			<p class="copyright">&copy; Copyright BrigadeiRô 2022</p>
 		</footer>

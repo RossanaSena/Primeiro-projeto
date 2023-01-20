@@ -1,5 +1,11 @@
-### Minha carreira dev começa aqui!
+# Criação de um site fictício
 
-##### Meu primeiro projeto foi um site. 
+## Apresentação
 
-##### A ideia foi construir um site agradável, delicado, com imagens e uma usabilidade dinâmica. O projeto existe para que eu melhore os meus conhecimentos, saber aplicar propriedades como a linguadem de marcação HTML para estruturar a informações e etilizar com a linguagem de estilo CSS. Com isso, busco feedbacks para que os próximos sites tenham propriedades cada vez mais assertivas semanticamente e agradáveis esteticamente.
+A ideia foi construir um site agradável visualmente, delicado, com imagens e uma usabilidade dinâmica. Com esse projeto iniciei meus estudos de programação. O intuito de melhorar os meus conhecimentos, saber aplicar propriedades do HTML e CSS. Busco feedbacks para que os próximos sites tenham propriedades assertivas semanticamente e agradáveis esteticamente.
+
+Este projeto foi o primeiro projeto individual realizado, na mentoria Conquiste Sua Vaga.
+
+## Demonstração do projeto
+
+- [Deploy]()
